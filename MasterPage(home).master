@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage(home).master.cs" Inherits="MasterPage_register_" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MedicalHealthOnlineservices</title>
+</head>
+    
+<body class="bg-gray-100">
+    <form id="form1" runat="server">
+    <!-- Nav bar-->
+    <nav class="flex items-center bg-white p-4 border-b border-gray-300 justify-end">
+            <div class="container mx-auto flex justify-between items-center">
+        <a href="Homepage.aspx" class="text-5xl md:text-5xl font-extrabold">Medi<span class="text-blue-500 text-5xl  font-weight-700">Care</span></a>
+        
+        </div>
+        &nbsp &nbsp
+        
+        
+       <a href="product1.aspx" target="_blank" style="text-decoration: none; color: inherit;">
+    <i class="fa fa-shopping-basket" style="font-size: 20px;"></i>
+    </a>
+
+    
+
+        
+
+    <div class="flex gap-3">
+       
+        <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="hover:text-red-500 font-semibold  bg-black text-white px-4 py-2 rounded" PostBackUrl="~/LoginForm.aspx" />
+        <asp:Button ID="btnSupport" runat="server" Text="Support" CssClass="hover:text-red-500 font-semibold  bg-black text-white px-4 py-2 rounded" PostBackUrl="~/Support.aspx" />
+        <asp:Button ID="btnAboutus" runat="server" Text="About Us" CssClass="hover:text-red-500 font-semibold  bg-black text-white px-4 py-2 rounded" PostBackUrl="~/AboutUs.aspx" />
+         <asp:Button ID="Btnadminlogin" runat="server" Text="Adminlogin" CssClass="hover:text-red-500 font-semibold  bg-black text-white px-4 py-2 rounded" PostBackUrl="~/Adminloginform.aspx" />
+
+        
+        
+    </div>
+</nav>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <!--footer-->
+     <footer class="bg-white text-Black text-center py-4 mt-10 font-extrabold bottom-0 w-full">
+    <div class="container mx-auto">
+        <p>&copy; 2024 MediCare. All Rights Reserved.</p>
+    </div>
+</footer>
+    </form>
+</body>
+</html>
